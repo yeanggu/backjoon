@@ -13,20 +13,12 @@ public class b1110 {
 		int temp = num;
 		int count = 0;
 		
-		while(num<99){
-			int sum = 0;
-			int sum2 = 0;
-			
-			sum += num%10;
-			num /= 10;
-			
-			if(sum2 == 0) {
-				sum2 = sum + num;
-				num = (sum*10) + (sum2%10);
-				count++;
-			}
-			
-			if(temp == num) {
+		while(true) {
+			int left = temp / 10;
+			int right = temp % 10;
+			temp = right * 10 + (left + right) % 10;
+			count++;
+			if(num == temp) {
 				break;
 			}
 		}
