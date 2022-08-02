@@ -8,19 +8,28 @@ public class b2577 {
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int[] arr = new int[10];
-		 
-		int val = Integer.parseInt(br.readLine()) * Integer.parseInt(br.readLine()) * Integer.parseInt(br.readLine());
- 
-		String str = String.valueOf(val);
- 
-		for (int i = 0; i < str.length(); i++) {
-			arr[(str.charAt(i) - 48)]++;
+		int a = Integer.parseInt(br.readLine());
+		int b = Integer.parseInt(br.readLine());
+		int c = Integer.parseInt(br.readLine());
+		int[] box = new int[10];
+		
+		int cal = a * b * c;
+		
+		String calbefore = String.valueOf(cal);
+		String calafter[] = calbefore.split("");
+		
+		for(int i=0;i<calafter.length;i++) {
+			//System.out.println(cal%10);
+			++box[cal%10];
+			cal/=10;
 		}
- 
-		for (int v : arr) {
-			System.out.println(v);
+		
+		for(int i=0;i<10;i++) {
+			System.out.println(box[i]);
 		}
+		
+		br.close();
+		
 	}
 	
 }
