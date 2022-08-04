@@ -9,13 +9,13 @@ public class b1546 {
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine());
 		int a = Integer.parseInt(br.readLine());
 		int[] b = new int[a];
 		double[] c = new double[a];
 		int max = 0;
 		double avg = 0;
 		
+		StringTokenizer st = new StringTokenizer(br.readLine());
 		for(int i=0;i<a;i++) {
 			b[i] = Integer.parseInt(st.nextToken());
 			if(b[i]>max) {
