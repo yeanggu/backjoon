@@ -14,7 +14,6 @@ public class b4344 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		int a = Integer.parseInt(br.readLine());
 		
-		
 		for(int i=0;i<a;i++) {
 			StringTokenizer st = new StringTokenizer(br.readLine());
 			int b = Integer.parseInt(st.nextToken());
@@ -36,8 +35,6 @@ public class b4344 {
 			per = Math.round((count/(double)b*100)*1000)/1000.0;
 			bw.write(String.format("%.3f", per)+"%\n");
 		}
-		
-		
 		bw.close();
 		br.close();
 	}
