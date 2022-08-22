@@ -13,10 +13,10 @@ public class b1157 {
 		
  
 		for (int i = 0; i < s.length(); i++) {
-			if ('a' <= s.charAt(i) && s.charAt(i) <= 'z') {
-				arr[s.charAt(i) - 97]++;
+			if ('a' <= s.charAt(i) && s.charAt(i) <= 'z') { //소문자 범위
+				arr[s.charAt(i) - 97]++; //소문자 숫자 뺌 인덱스 1증가
 			} else {
-				arr[s.charAt(i) - 65]++;
+				arr[s.charAt(i) - 65]++; //대문자 숫자 뺌 인덱스 1증가
 			}
 		}
 		int max = -1;
