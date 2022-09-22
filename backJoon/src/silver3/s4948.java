@@ -5,22 +5,27 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class s1929 {
-	//	소수 구하기 (에라토스테네스의 체)
+public class s4948 {
+	//	베르트랑 공준
 	
 	public static boolean[] prime;
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine()," ");
 		StringBuilder sb = new StringBuilder();
-		int M = Integer.parseInt(st.nextToken());
-		int N = Integer.parseInt(st.nextToken());
 		
-		prime = new boolean[N + 1];
-		prime();
-		
-		for(int i=M;i<=N;i++) {
-			if(!prime[i]) sb.append(i).append('\n');
+		while(true) {
+			int count = 0;
+			int N = Integer.parseInt(br.readLine());
+			if(N == 0) break;
+
+			prime = new boolean[(N*2) + 1];
+			prime();
+			
+			for(int i=N+1;i<=N*2;i++) {
+				if(!prime[i]) count++;
+			}
+			sb.append(count).append('\n');
+			
 		}
 
 		System.out.println(sb);
