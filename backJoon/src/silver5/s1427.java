@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.Arrays;
  
-public class b1427 {
+public class s1427 {
 	// 소트인사이드
 	
 	public static void main(String[] args) throws IOException {
