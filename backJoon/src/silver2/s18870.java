@@ -30,7 +30,6 @@ public class s18870 {
 		// 정렬 할 배열에 대해 정렬을 수행해준다.
 		Arrays.sort(sorted);
 		
-		
 		// 정렬 된 배열을 순회하면서 map에 넣어준다.
 		int rank = 0;
 		for(int v : sorted) {
