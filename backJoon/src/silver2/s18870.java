@@ -19,7 +19,6 @@ public class s18870 {
 		int[] origin = new int[N];	// 원본 배열
 		int[] sorted = new int[N];	// 정렬 할 배열
 		HashMap<Integer, Integer> rankingMap = new HashMap<Integer, Integer>();	// rank를 매길 HashMap
- 
 		
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 		for(int i = 0; i < N; i++) {
