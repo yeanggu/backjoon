@@ -10,7 +10,6 @@ public class b25501 {
 	static int count;
 	static String sentence;
 	public static void main(String[] args) throws IOException {
-	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
 		
