@@ -21,7 +21,6 @@ public class b25501 {
 		}	
 	}
 	
-	
 	public static int isPalindrome(int r, int l) {
 		count++;
 		if (r >= l) {
