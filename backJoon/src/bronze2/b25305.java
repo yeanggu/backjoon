@@ -20,8 +20,6 @@ public class b25305 {
 
 		Integer[] arr = new Integer[N];
         
-		st = new StringTokenizer(br.readLine());
-		
 		for(int i = 0; i < N; i++){
 			arr[i] = Integer.parseInt(st.nextToken());
 		}
