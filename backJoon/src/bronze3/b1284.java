@@ -2,7 +2,6 @@ package bronze3;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class b1284 {
 	//	Áý ÁÖ¼Ò
