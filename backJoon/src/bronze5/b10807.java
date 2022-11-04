@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.StringTokenizer;
 
 public class b10807 {
-//	개수 세기
+	//	개수 세기
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
