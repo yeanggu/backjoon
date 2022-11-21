@@ -10,7 +10,7 @@ public class b1037 {
 	
 	public static void main(String[] args) throws IOException {
     
-		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
 		int T = Integer.parseInt(br.readLine());
 		
