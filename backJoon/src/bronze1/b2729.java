@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public class b2729 {
 	//	ÀÌÁø¼ö µ¡¼À
 	
-	private void solution() throws Exception {
+	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int t = Integer.parseInt(br.readLine());
         StringBuilder sb = new StringBuilder();
@@ -41,7 +41,4 @@ public class b2729 {
         System.out.print(sb);
     }
 
-    public static void b2729(String[] args) throws Exception {
-        new b2729().solution();
-    }
 }
