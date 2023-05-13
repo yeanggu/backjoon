@@ -10,36 +10,30 @@ public class b10813 {
 
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		String str = br.readLine();
-		StringTokenizer st = new StringTokenizer(str, " ");
+		StringTokenizer st = new StringTokenizer(br.readLine());
 
 		int N = Integer.parseInt(st.nextToken());
 		int M = Integer.parseInt(st.nextToken());
 
-		int[] num = new int[N];
+		int basket[] = new int[N+1];
 
-		int arr[] = new int[N + 1];
-
-		int i, j, tmp;
-
-		for(int s = 1; s <= N; s++) {
-			arr[s] = s;
+		for (int i = 1 ; i <= N; i++) {
+			basket[i] = i;
 		}
 
-		for(int s = 0; s < M; s++) {
-			String as = br.readLine();
-			StringTokenizer stt = new StringTokenizer(as, " ");
-			i = Integer.parseInt(stt.nextToken());
-			j = Integer.parseInt(stt.nextToken());
+		for (int i = 0 ; i < M; i++) {
+			StringTokenizer st1 = new StringTokenizer(br.readLine());
+			int a = Integer.parseInt(st1.nextToken());
+			int b = Integer.parseInt(st1.nextToken());
 
-			tmp = arr[i];
-			arr[i] = arr[j];
-			arr[j] = tmp;
+			int temp = basket[a];
+
+			basket[a] = basket[b];
+			basket[b] = temp;
 		}
 
-		for(int s = 1; s <= N; s++) {
-			bw.write(arr[s] + " ");
+		for (int i = 1 ; i <=N; i++) {
+			System.out.print(basket[i]+ " ");
 		}
 	}
 	
